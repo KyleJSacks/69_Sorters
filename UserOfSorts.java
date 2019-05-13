@@ -38,11 +38,15 @@ public class UserOfSorts {
             ));
 
         // insertion sort                   
-        oneTest( "insertion sort "
+        /*oneTest( "insertion sort "
                , new InsertionSorter( unsorted)
                );
 		oneTest( "selection sort"
 				, new SelectionSorter(unsorted)
+				); */
+		System.out.println(unsorted);
+		oneTest("SubSortThenMerge ",
+				  new SubSortThenMerge_Sorter(unsorted)
 				);
 	}
     
